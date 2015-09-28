@@ -1,0 +1,51 @@
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	background-color: #FFCDD9;
+	transition: all 0.3s ease 0s;
+}
+
+.headerLink {
+	color: #FF00FF;
+	background-color: transparent;
+	text-align: center;
+	font-family: 'Raleway';
+	font-size: 24px;
+	font-style: none;
+	font-weight: 100;
+}
+
+.headerLink:hover {
+	color: black;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+
+.black-bg {
+	color: white;
+	background-color: black;
+}
+
+.content-section {
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+.home-page {
+	min-height: 100%;
+}
+
+.page-title {
+	text-align: center;
+	font-family: Courier;
+	font-size: 56px;
+	padding-top: 20%;
+}
+
+.section-header {
+	height:75px;
+	font-family: 'Raleway';
+	color: #FF00FF;
+	font-size: 28px;
+	font-style: none;
+	font-weight: 100;
+}
