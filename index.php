@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="customStyles.css">
+		<link rel="stylesheet" href="styles/customStyles.css">
 
 		<title>tidtag</title>
 	</head>
@@ -39,7 +39,7 @@
 		</nav>
 	-->
 
-		<div id = "hem" style = "background-image:url(bg-paper-color.jpg); background-size:cover;" class = "content-section home-page">
+		<div id = "hem" style = "background-image:url(images/bg-paper-color.jpg); background-size:cover;" class = "content-section home-page">
 			<div class = "container">
 
 				<div class = "row top-menu">
