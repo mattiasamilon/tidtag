@@ -1,0 +1,15 @@
+{
+    "title": "TJÄNSTER",
+    "content": {
+    	"item0": {
+            "class": "col-md-4",
+        	"title": "Rubrik...",
+        	"text": "Text..."
+		},
+		"item1": {
+            "class": "col-md-4",
+			"title": "Rubrik...",
+			"text": "Text..."
+		}    
+    }
+}

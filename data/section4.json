@@ -1,0 +1,10 @@
+{
+    "title": "KONTAKT",
+    "content": {
+    	"item0": {
+            "class": "col-md-3",
+        	"title": "",
+        	"text": "<div><span class = 'glyphicon glyphicon-earphone'></span> 070-313 13 13	</div><div><span class = 'glyphicon glyphicon-map-marker'></span> Paradisäppelvägen 111</div><div><span class = 'glyphicon glyphicon-envelope'></span> kalle@anka.com</div>"
+		}  
+    }
+}
