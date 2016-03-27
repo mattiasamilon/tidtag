@@ -27,10 +27,9 @@
 		 * Updates the specified item with the given content. Then
 		 * writes it back to the "database" file.
 		 */
-		public function updateItem($sectionID, $itemID, $title, $text) {
+		public function updateItem($sectionID, $itemID, $content) {
 			$sectionData = $this->dr->getDataFromFile($sectionID . ".json");
-			$sectionData["content"][$itemID]["title"] = $title;
-			$sectionData["content"][$itemID]["text"] = $text;
+			$sectionData["content"][$itemID]["content"] = $content;
 			$this->dr->updateFile($sectionID . ".json", $sectionData);
 		}
 

@@ -1,13 +1,13 @@
 <?php
 	/**
-	 * This file just takes the posted title and text to be saved 
+	 * This file just takes the posted title and text to be saved
 	 * and updates the corresponding item file with them.
 	 */
-	if(isset($_POST["sectionID"]) && isset($_POST["itemID"]) && isset($_POST["title"]) && isset($_POST["text"])) {
+	if(isset($_POST["sectionID"]) && isset($_POST["itemID"]) && isset($_POST["content"])) {
 		require "controller.php";
 		$controller = new Controller();
 
-		$controller->updateItem($_POST["sectionID"], $_POST["itemID"], $_POST["title"], $_POST["text"]);
+		$controller->updateItem($_POST["sectionID"], $_POST["itemID"], $_POST["content"]);
 
 		echo "Sparat";
 	} else if(isset($_POST["telephone"]) && isset($_POST["address"]) && isset($_POST["email"])) {

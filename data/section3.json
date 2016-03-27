@@ -3,8 +3,8 @@
     "content": {
     	"item0": {
             "class": "col-md-4",
-        	"title": "",
-        	"text": "Om oss text..."
-		}  
+        	  "title": "",
+        	  "text": "Om oss text...",
+		      }
     }
 }

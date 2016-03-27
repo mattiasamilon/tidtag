@@ -1,15 +1,1 @@
-{
-    "title": "TJÄNSTER",
-    "content": {
-    	"item0": {
-            "class": "col-md-4",
-        	"title": "Rubrik...",
-        	"text": "Text..."
-		},
-		"item1": {
-            "class": "col-md-4",
-			"title": "Rubrik...",
-			"text": "Text..."
-		}    
-    }
-}
+{"title":"TJ\u00c4NSTER","content":{"item0":{"class":"col-md-4","content":"<h3>Journalistik<\/h3><p>Hej test text bananas mer testning<\/p><blockquote><p><em>Viktigt citat<\/em><\/p><\/blockquote><p>Sagt av&nbsp;<em>Anonym Andersson<\/em><\/p>"},"item1":{"class":"col-md-4","content":"<h3>Kommunikation<\/h3><p>Mer <em>om<\/em> <strong>kommunikation<\/strong><\/p>"}}}

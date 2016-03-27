@@ -23,7 +23,7 @@
 	<!--
 		<nav class = "navbar navbar-default navbar-fixed-top" role = "navigation">
 			<div class = "container">
-				
+
 				<div class = "navbar-header">
 					<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navHeader">
 						<span class="sr-only">Toggle navigation</span>
@@ -101,7 +101,7 @@
 
 				<div class = "row">
 					<div class = "col-md-1"></div>
-					<div class = "col-md-4">
+					<!--div class = "col-md-4">
 						<h3>Journalistik</h3>
 						<div style = "white-space: pre-wrap; line-height: 175%;">
 Vi erbjuder journalistik om aktuella ämnen med historiska vinklar. Ur historiska perspektiv skriver vi både komplexare och enklare texter.
@@ -111,7 +111,7 @@ Vi erbjuder journalistik om aktuella ämnen med historiska vinklar. Ur historisk
 	Vi försöker förstå människor genom att kritiskt lyssna på dem. Tillsammans med dem, och historiens människor, bryter vi upp med invanda tankesätt och tänker nytt.
 	Tidtag Journalistik arbetar med:
 						</div>
-     					<ul>
+     				<ul>
 							<li>Artiklar och reportage om aktuella ämnen med historiska vinklar.</li><br>
 							<li>Populärvetenskapliga artiklar och reportage som presenterar humanistisk vetenskap.</li><br>
 							<li>Vetenskapsjournalistisk granskning av politik, massmedier och vetenskaper.</li>
@@ -129,11 +129,11 @@ Vi erbjuder kommunikationsvetenskaplig och språklig korrekturläsning av texter
      					<ul>
 							<li>Språklig korrekturläsning av skrifter, så som rapporter, informationsutskick, journalistiska texter och litteratur.</li>
 						</ul>
-					</div>
-					<!--?php 
+					</div-->
+					<?php
 						$sectionID = "section1";
 						include "view/section.php";
-					?-->
+					?>
 				</div>
 			</div>
 		</div>
@@ -148,7 +148,7 @@ Vi erbjuder kommunikationsvetenskaplig och språklig korrekturläsning av texter
 				</div>
 				<div class = "row">
 					<div class = "col-md-4"></div>
-					<?php 
+					<?php
 						$sectionID = "section2";
 						include "view/section.php";
 					?>
@@ -172,7 +172,7 @@ Vi erbjuder kommunikationsvetenskaplig och språklig korrekturläsning av texter
 Vi bakom <i>Tidtag Journalistik &amp; Kommunikation</i>, Jenny Gustafsson och Johan Cederqvist, har båda en masterexamen i idéhistoria samt en examen i journalistik. Under vår studietid har vi lärt oss att skriva vetenskapliga uppsatser, akademisk engelska, forskningsöversikter, journalistiska texter, populärvetenskap och vetenskapsjournalistik, att granska politik, massmedier och vetenskap, att försöka förstå människor kritiskt, och att kommunicera muntligt genom att ställa öppna frågor, lyssna aktivt och ställa följdfrågor.
 						</div>
 					</div>
-						<!--?php 
+						<!--?php
 							$sectionID = "section3";
 							include "view/section.php";
 						?-->
@@ -197,7 +197,7 @@ Vi bakom <i>Tidtag Journalistik &amp; Kommunikation</i>, Jenny Gustafsson och Jo
 					else
 						echo "<div class = \"col-md-3\">"; ?>
 						<div id = "telephone">
-							<span class = "glyphicon glyphicon-earphone"></span> <?php echo $contact["telephone"]; ?>	
+							<span class = "glyphicon glyphicon-earphone"></span> <?php echo $contact["telephone"]; ?>
 						</div>
 						<div id = "address">
 							<span class = "glyphicon glyphicon-map-marker"></span> <?php echo $contact["address"]; ?>
@@ -215,9 +215,10 @@ Vi bakom <i>Tidtag Journalistik &amp; Kommunikation</i>, Jenny Gustafsson och Jo
 			</div>
 		</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="view.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src = "view.js"></script>
+		<script src = "ckeditor/ckeditor.js"></script>
 
 	</body>
 

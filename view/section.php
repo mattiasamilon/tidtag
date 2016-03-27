@@ -1,22 +1,20 @@
 <?php $section = $controller->getSectionData($sectionID); ?>
 <?php $i = 0; ?>
 <?php foreach ($section["content"] as $item) { ?>
-	<?php if(isset($_SESSION["id"])) { 
-		echo "<div class = \"" . $item["class"] . " item\" contenteditable = \"true\">";
+	<?php $id = "" . $sectionID . "-item" . $i; ?>
+	<?php echo "<div class = \"" . $item["class"] . "\">"; ?>
+	<?php if(isset($_SESSION["id"])) {
+		echo "<div id = \"" . $id . "\" class = \"item\" contenteditable = \"true\">";
 	} else {
-		echo "<div class = \"" . $item["class"] . "\">";
+		echo "<div id = \"" . $id . "\">";
 	} ?>
-		<div class = "itemTitle"><h3><?php echo $item["title"]; ?></h3></div>
-		<div class = "itemText"><p align = "justify">
-			<?php echo $item["text"]; ?>
-		</p></div>
+			<?php echo $item["content"]; ?>
+		</div>
 		<?php if(isset($_SESSION["id"])) { ?>
-			<div class = "pull-right itemButton" style = "display: none; padding-bottom: 10px;">
-				<div class = "sectionID" style = "display: none;"><?php echo $sectionID; ?></div>
-				<div class = "itemID" style = "display: none;"><?php echo "item" . $i; ?></div>
-				<a class = "btn btn-primary" contenteditable = "false">Spara</a>
+			<?php echo "<div id = \"btn-" . $id . "\" class = \"pull-right itemButton\" style = \"display: none; padding-bottom: 10px;\">"; ?>
+				<a class = "btn btn-primary">Spara</a>
 			</div>
 		<?php } ?>
-	</div>
+		</div>
 	<?php $i++; ?>
 <?php } ?>

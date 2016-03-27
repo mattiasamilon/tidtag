@@ -1,10 +1,1 @@
-{
-    "title": "VISION",
-    "content": {
-    	"item0": {
-            "class": "col-md-4",
-        	"title": "",
-        	"text": "Vision text..."
-		}
-    }
-}
+{"title":"VISION","content":{"item0":{"class":"col-md-4","content":"<p>Ny text om v\u00e5ran <br><\/p><ul><li>Vision<\/li><li>Nyt\u00e4nkande<\/li><\/ul><p>eller annat<\/p>"}}}
