@@ -10,11 +10,11 @@
 	} ?>
 			<?php echo $item["content"]; ?>
 		</div>
-		<?php if(isset($_SESSION["id"])) { ?>
-			<?php echo "<div id = \"btn-" . $id . "\" class = \"pull-right itemButton\" style = \"display: none; padding-bottom: 10px;\">"; ?>
+		<?php /*if(isset($_SESSION["id"])) {
+			echo "<div id = \"btn-" . $id . "\" class = \"pull-right itemButton\" style = \"display: none; padding-bottom: 10px;\">";
 				<a class = "btn btn-primary">Spara</a>
 			</div>
-		<?php } ?>
+		} */?>
 		</div>
 	<?php $i++; ?>
 <?php } ?>

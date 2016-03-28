@@ -55,16 +55,16 @@
 						<a href = "#" class = "headerLink"><div>HEM</div><div><span class = "glyphicon glyphicon-menu-down"></span></div></a>
 					</div>
 					<div class = "col-md-2">
-						<a href = "#tjanster" class = "headerLink"><div>TJÄNSTER</div></a>
+						<a href = "#tjanster" class = "scroll headerLink"><div>TJÄNSTER</div></a>
 					</div>
 					<div class = "col-md-2">
-						<a href = "#vision" class = "headerLink"><div>VISION</div></a>
+						<a href = "#vision" class = "scroll headerLink"><div>VISION</div></a>
 					</div>
 					<div class = "col-md-2">
-						<a href = "#om" class = "headerLink"><div>OM OSS</div></a>
+						<a href = "#om" class = "scroll headerLink"><div>OM OSS</div></a>
 					</div>
 					<div class = "col-md-2">
-						<a href = "#kontakt" class = "headerLink"><div>KONTAKT</div></a>
+						<a href = "#kontakt" class = "scroll headerLink"><div>KONTAKT</div></a>
 					</div>
 				</div>
 
@@ -217,6 +217,7 @@ Vi bakom <i>Tidtag Journalistik &amp; Kommunikation</i>, Jenny Gustafsson och Jo
 
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src = "js/jquery.easing.min.js"></script>
 		<script src = "view.js"></script>
 		<script src = "ckeditor/ckeditor.js"></script>
 

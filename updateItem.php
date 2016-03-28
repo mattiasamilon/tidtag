@@ -9,16 +9,16 @@
 
 		$controller->updateItem($_POST["sectionID"], $_POST["itemID"], $_POST["content"]);
 
-		echo "Sparat";
+		echo "200";
 	} else if(isset($_POST["telephone"]) && isset($_POST["address"]) && isset($_POST["email"])) {
 		require "controller.php";
 		$controller = new Controller();
 
 		$controller->updateContact($_POST["telephone"], $_POST["address"], $_POST["email"]);
 
-		echo "Sparat";
+		echo "200";
 	} else {
-		echo "Innehållet kunde inte sparas";
+		echo "400";
 	}
 
 ?>
