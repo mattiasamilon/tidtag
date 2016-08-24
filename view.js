@@ -1,10 +1,14 @@
 $(document).ready(function() {
+
 	$(".itemButton a").click(function() {
+		alert("Button pressed!");
+		var ids = $(this).parent().attr("id").split("-");
+		var sectionId = ids[1];
+		var itemId = ids[2];
 		$.post("updateItem.php", {
-			sectionID: $(".sectionEdit").text(),
-			itemID: $(".itemEdit").text(),
-			title: $(".titleEdit").text(),
-			text: $(".textEdit").text()
+			sectionID: sectionId,
+			itemID: itemId,
+			content: $("#" + sectionId + "-" + itemId).html(),
 		}, function(response) {
 			alert(response);
 		});
@@ -21,20 +25,26 @@ $(document).ready(function() {
 	});
 });
 
+// Shows the save button when an editable item is focused.
 $(".item").focus(function() {
-	$(this).find(".itemButton").show();
-	$(this).find(".itemButton .sectionID").addClass("sectionEdit");
-	$(this).find(".itemButton .itemID").addClass("itemEdit");
-	$(this).find(".itemTitle").addClass("titleEdit");
-	$(this).find(".itemText").addClass("textEdit");
+	$("#btn-" + $(this).attr("id")).show();
 });
 
+// Hides the save button when an editable item is not focused anymore.
 $(".item").focusout(function() {
-	$(this).find(".itemButton").hide();
-	$(this).find(".itemButton .sectionID").removeClass("sectionEdit");
-	$(this).find(".itemButton .itemID").removeClass("itemEdit");
-	$(this).find(".itemTitle").removeClass("titleEdit");
-	$(this).find(".itemText").removeClass("textEdit");
+	// Save the content
+	var ids = $(this).attr("id").split("-");
+	var sectionId = ids[0];
+	var itemId = ids[1];
+	$.post("updateItem.php", {
+		sectionID: sectionId,
+		itemID: itemId,
+		content: $("#" + sectionId + "-" + itemId).html(),
+	}, function(response) {
+		if (response !== "200") alert("Någonting gick fel, innehållet kunde inte sparas.");
+	});
+	// Hide save button
+	$("#btn-" + $(this).attr("id")).hide();
 });
 
 $(".contactEdit").focus(function() {
@@ -43,4 +53,12 @@ $(".contactEdit").focus(function() {
 
 $(".contactEdit").focusout(function() {
 	$(this).find(".contactButton").hide();
+});
+
+$(".scroll").click(function(event){
+	var $anchor = $(this);
+  $('html, body').stop().animate({
+    scrollTop: ($($anchor.attr('href')).offset().top)
+  }, 1250, 'easeInOutExpo');
+  event.preventDefault();
 });
